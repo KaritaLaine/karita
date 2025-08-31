@@ -5,7 +5,7 @@ import Settings from "../../assets/settings.png";
 export const Header = () => {
   return (
     <div>
-      <div className="flex gap-[3rem] w-full text-3xl font-semibold justify-end items-center pt-[3rem] pr-[5rem]">
+      <div className="flex gap-[3rem] w-full text-3xl font-semibold justify-end items-center pt-[3rem] pr-[5rem] flex-wrap">
         <a href="/"> About </a>
         <a href="/projects">Projects</a>
 
@@ -19,7 +19,7 @@ export const Header = () => {
       </div>
 
       <div className="flex justify-center items-center h-[50rem] flex-col gap-[1.5rem]">
-        <h1 className="text-[64px] font-bold">Hi, I'm Karita</h1>
+        <h1 className="text-[64px] font-bold text-center">Hi, I'm Karita</h1>
         <h1 className="text-[40px] font-normal text-center">
           a front-end developer & university student
         </h1>

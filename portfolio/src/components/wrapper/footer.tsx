@@ -6,7 +6,7 @@ export const Footer = () => {
       <p>Designed & built by Karita</p>
 
       {/* TODO: hide on projects page */}
-      <div className="italic flex gap-[0.2rem] text-sm">
+      <div className="italic flex gap-[0.2rem] text-sm flex-wrap justify-center">
         About me icon made by
         <a
           href="https://www.flaticon.com/authors/bomsymbols"
