@@ -9,7 +9,7 @@ export const Wrapper = ({ children }: Props) => {
   return (
     <>
       <Header />
-      <div className="flex align-center justify-center min-h-[80vh]">
+      <div className="flex align-center justify-center py-[3rem] bg-cream">
         {children}
       </div>
       <Footer />
