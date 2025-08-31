@@ -2,7 +2,7 @@
 
 export const Footer = () => {
   return (
-    <div className="flex flex-col text-center font-light items-center gap-[0.3rem]">
+    <div className="flex flex-col text-center font-light items-center gap-[0.3rem] h-[15rem] justify-center text-sm bg-cream">
       <p>Designed & built by Karita</p>
 
       {/* TODO: hide on projects page */}
