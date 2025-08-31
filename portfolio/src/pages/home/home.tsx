@@ -10,7 +10,6 @@ export const Home = () => {
           src={DownArrow}
           alt="down arrow"
           className="h-[0.9rem] w-[1.6rem] cursor-pointer mt-[5rem] animate-bounce"
-          style={{ animationDuration: "3s" }}
         />
 
         <div className="mt-[15rem] max-w-[50rem] text-align-left flex">
