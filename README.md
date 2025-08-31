@@ -1,3 +1,3 @@
 ### a portfolio project
 
-tech: React, Vite, TailWind, TanStack Router
+tech: React, TypeScript, Vite, TailWind, TanStack Router
