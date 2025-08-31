@@ -1,11 +1,11 @@
+import { Wrapper } from "../../components/wrapper/wrapper";
+
 export const Home = () => {
   return (
-    <div>
-      <div className="text-3xl font-bold">welcome to my portfolio ^^</div>
-
-      <a href="/projects" className="font-bold">
-        go to projects
-      </a>
-    </div>
+    <Wrapper>
+      <div>
+        <p> home </p>
+      </div>
+    </Wrapper>
   );
 };
