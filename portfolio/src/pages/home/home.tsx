@@ -5,6 +5,7 @@ export const Home = () => {
   return (
     <Wrapper>
       <div className="flex flex-col justify-center items-center">
+        {/* TODO: use icon button component? */}
         <img
           src={DownArrow}
           alt="down arrow"
