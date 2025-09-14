@@ -4,7 +4,7 @@ export const Footer = () => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
   return (
-    <div className="flex flex-col text-center font-light items-center h-[15rem] justify-center text-sm bg-cream">
+    <footer className="flex flex-col text-center font-light items-center h-[15rem] justify-center text-sm bg-cream">
       <p>Designed & developed by Karita</p>
       <p>Built with React, TypeScript & Tailwind</p>
 
@@ -30,6 +30,6 @@ export const Footer = () => {
           </a>
         </div>
       )}
-    </div>
+    </footer>
   );
 };

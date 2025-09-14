@@ -7,7 +7,7 @@ export const Header = () => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
   return (
-    <div>
+    <header>
       {/* Navigation buttons */}
       <div className="flex gap-[3rem] w-full text-3xl font-semibold justify-end items-center pt-[3rem] pr-[5rem] flex-wrap">
         <Link
@@ -59,6 +59,6 @@ export const Header = () => {
           points: 3,
         }}
       />
-    </div>
+    </header>
   );
 };
