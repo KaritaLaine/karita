@@ -1,7 +1,7 @@
 import { Link, useLocation } from "@tanstack/react-router";
-
 import Wave from "react-wavify";
 import Settings from "../../assets/settings.png";
+import { IconButton } from "../icon-button";
 
 export const Header = () => {
   const location = useLocation();
@@ -10,22 +10,29 @@ export const Header = () => {
     <div>
       {/* Navigation buttons */}
       <div className="flex gap-[3rem] w-full text-3xl font-semibold justify-end items-center pt-[3rem] pr-[5rem] flex-wrap">
-        <Link to="/" className={`${isHomePage ? "text-accent" : ""}`}>
+        <Link
+          to="/"
+          className={`hover:scale-105 ${isHomePage ? "text-accent" : ""}`}
+        >
           Home
         </Link>
-        <Link to="/projects" className={` ${!isHomePage ? "text-accent" : ""}`}>
+        <Link
+          to="/projects"
+          className={`hover:scale-105 ${!isHomePage ? "text-accent" : ""}`}
+        >
           Projects
         </Link>
 
         {/* TODO: open settings menu */}
-        {/* TODO: use icon button component? */}
-        <img
-          src={Settings}
+        <IconButton
+          icon={Settings}
           alt="open settings icon"
-          className="w-[1.6rem] h-[1.6rem] mt-[0.3rem] cursor-pointer"
+          onClick={() => {}}
+          size="w-[1.6rem] h-[1.6rem]"
         />
       </div>
 
+      {/* Heading texts on wavy background */}
       {isHomePage ? (
         <div className="flex justify-center items-center h-[50rem] flex-col gap-[1.5rem]">
           <h1 className="text-[4rem] font-bold text-center">Hi, I'm Karita</h1>
