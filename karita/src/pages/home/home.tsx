@@ -3,6 +3,8 @@ import DownArrow from "../../assets/down-arrow.png";
 import { Wrapper } from "../../components/wrapper/wrapper";
 
 export const Home = () => {
+  const accentStyling =
+    "font-semibold text-accent inline-block hover:scale-105 hover:mx-[0.1rem]";
   const technologies = [
     { name: "React", url: "https://react.dev/" },
     { name: "React Native", url: "https://reactnative.dev/" },
@@ -43,7 +45,7 @@ export const Home = () => {
                 frontends for websites and applications. I started my journey in
                 2021 at a vocational school where I was first introduced to
                 front-end development, and I soon continued exploring it at{" "}
-                <span className="font-semibold text-accent">
+                <span className={`${accentStyling}`}>
                   <a href="https://www.turkuamk.fi/en/" target="_blank">
                     Turku AMK
                   </a>
@@ -52,7 +54,7 @@ export const Home = () => {
                 <br />
                 <br />
                 Currently I’m working on projects at{" "}
-                <span className="font-semibold text-accent">
+                <span className={`${accentStyling}`}>
                   <a href="https://thefirma.fi/" target="_blank">
                     theFIRMA
                   </a>
@@ -68,7 +70,7 @@ export const Home = () => {
                     <a
                       href={tech.url}
                       target="_blank"
-                      className="font-semibold text-accent"
+                      className={`${accentStyling}`}
                     >
                       {tech.name}
                     </a>
@@ -83,7 +85,7 @@ export const Home = () => {
                 <br />
                 <br />
                 Don’t hesitate to reach out to me via{" "}
-                <span className="font-semibold text-accent">
+                <span className={`${accentStyling}`}>
                   <a href="mailto:karitalainee@gmail.com">e-mail</a>
                 </span>
                 ! :)
