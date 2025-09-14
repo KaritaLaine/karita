@@ -1,14 +1,27 @@
+import { Link, useLocation } from "@tanstack/react-router";
+
 import Wave from "react-wavify";
 import Settings from "../../assets/settings.png";
 
 // TODO: highlight active page
 export const Header = () => {
+  const location = useLocation();
   return (
     <div>
       {/* Navigation buttons */}
       <div className="flex gap-[3rem] w-full text-3xl font-semibold justify-end items-center pt-[3rem] pr-[5rem] flex-wrap">
-        <a href="/"> About </a>
-        <a href="/projects">Projects</a>
+        <Link
+          to="/"
+          className={`${location.pathname === "/" ? "text-accent" : ""}`}
+        >
+          Home
+        </Link>
+        <Link
+          to="/projects"
+          className={` ${location.pathname === "/projects" ? "text-accent" : ""}`}
+        >
+          Projects
+        </Link>
 
         {/* TODO: open settings menu */}
         {/* TODO: use icon button component? */}
