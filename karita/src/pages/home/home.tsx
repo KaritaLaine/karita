@@ -7,6 +7,7 @@ export const Home = () => {
     { name: "React", url: "https://react.dev/" },
     { name: "React Native", url: "https://reactnative.dev/" },
     { name: "Angular", url: "https://angular.dev/" },
+    { name: "Vue", url: "https://vuejs.org/" },
     {
       name: "JavaScript",
       url: "https://developer.mozilla.org/docs/Web/JavaScript",
