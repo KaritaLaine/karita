@@ -1,3 +1,3 @@
-### a portfolio project
+### Hi!
 
-tech: React, TypeScript, Vite, TailWind, TanStack Router
+Welcome to my project. This site was designed in Figma and built with React, TypeScript & Tailwind.
