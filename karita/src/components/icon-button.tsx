@@ -1,13 +1,19 @@
 interface Props {
   icon: string;
+  alt: string;
+  size: string;
   onClick: () => void;
 }
 
-export const IconButton = ({ icon, onClick }: Props) => {
+export const IconButton = ({ icon, alt, size, onClick }: Props) => {
   return (
-    // TODO: sizing and hover effect
-    <div>
-      <img src={icon} alt="icon" onClick={onClick} />
-    </div>
+    <>
+      <img
+        src={icon}
+        alt={alt}
+        onClick={onClick}
+        className={`${size} cursor-pointer hover:scale-105`}
+      />
+    </>
   );
 };
