@@ -10,7 +10,7 @@ export const Footer = () => {
 
       {isHomePage && (
         <div className="text-xs flex gap-[0.2rem] text-sm flex-wrap justify-center mt-[0.8rem]">
-          About me icon made by
+          <p>About me icon made by</p>
           <a
             href="https://www.flaticon.com/authors/bomsymbols"
             title="BomSymbols"
@@ -19,7 +19,7 @@ export const Footer = () => {
           >
             BomSymbols
           </a>
-          from
+          <p>from</p>
           <a
             href="https://www.flaticon.com/"
             title="Flaticon"
