@@ -4,17 +4,26 @@ interface Props {
   size: string
   onClick: () => void
   animation?: string
+  text?: string
 }
 
-export const IconButton = ({ icon, alt, size, onClick, animation }: Props) => {
+export const IconButton = ({
+  icon,
+  alt,
+  size,
+  onClick,
+  animation,
+  text,
+}: Props) => {
   return (
-    <>
+    <div className="cursor-pointer hover:scale-110 duration-200 flex items-center gap-[1rem]">
+      <p>{text}</p>
       <img
         src={icon}
         alt={alt}
         onClick={onClick}
-        className={`${size} cursor-pointer hover:scale-120 ${animation}`}
+        className={`${size} ${animation}`}
       />
-    </>
+    </div>
   )
 }
