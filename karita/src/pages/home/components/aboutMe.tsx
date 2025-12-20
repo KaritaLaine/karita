@@ -11,9 +11,9 @@ export const AboutMe = () => {
           <p className="text-5xl font-semibold mb-[2rem]"> About me </p>
           <p>
             I’m a third-year engineering student who enjoys building frontends
-            for websites and applications. I started my journey in 2021 at a
-            vocational school where I was first introduced to front-end
-            development, and I soon continued exploring it at{" "}
+            for websites and applications. I started exploring web development
+            in 2021 at a vocational school, and after getting hooked on
+            front-end I decided to continue my studies at{" "}
             <span className="text-accent font-semibold">
               <a href="https://www.turkuamk.fi/en/" target="_blank">
                 Turku AMK
@@ -29,9 +29,9 @@ export const AboutMe = () => {
                 theFIRMA
               </a>
             </span>{" "}
-            where I’ve further gained experience in building responsive websites
-            and mobile applications. As of now, I’ve been working with
-            technologies such as:
+            where I’ve gained a lot of experience in building responsive
+            websites and mobile applications. As of today, I’ve been working
+            with technologies such as:
           </p>
 
           <MyTechnologies />
