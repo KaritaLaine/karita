@@ -4,12 +4,12 @@ import { MyTechnologies } from "./myTechnologies"
 
 export const AboutMe = () => {
   return (
-    <div className="mt-[15%] max-w-[66rem] flex flex-wrap justify-space-between">
+    <div className="mt-[15%] max-w-[68rem] flex flex-wrap justify-space-between">
       <div className="flex items-center justify-center gap-[7%]">
         <img src={AboutMeIcon} alt="about me icon" className="w-[18rem]" />
 
-        <div className="w-[90%] text-2xl gap-[2rem] flex flex-col">
-          <p className="text-5xl font-semibold mb-[2rem]" id="about-me-header">
+        <div className="w-[90%] text-2xl gap-[2.5rem] flex flex-col">
+          <p className="text-5xl font-semibold mb-[1rem]" id="about-me-header">
             About me
           </p>
           <p>
