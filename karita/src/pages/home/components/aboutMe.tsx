@@ -8,7 +8,9 @@ export const AboutMe = () => {
         <img src={AboutMeIcon} alt="about me icon" className="w-[18rem]" />
 
         <div className="w-[90%] text-2xl gap-[2rem] flex flex-col">
-          <p className="text-5xl font-semibold mb-[2rem]"> About me </p>
+          <p className="text-5xl font-semibold mb-[2rem]" id="about-me-header">
+            About me
+          </p>
           <p>
             I’m a third-year engineering student who enjoys building frontends
             for websites and applications. I started exploring web development
@@ -39,7 +41,7 @@ export const AboutMe = () => {
           <p>
             Don’t hesitate to reach out to me via{" "}
             <span className="text-accent font-semibold">
-              <a href="mailto:karitalainee@gmail.com">e-mail</a>
+              <a href="mailto:karita.laine@edu.turkuamk.fi">e-mail</a>
             </span>
             ! :)
           </p>
