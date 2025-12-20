@@ -1,9 +1,10 @@
 import AboutMeIcon from "../../../assets/about-me.svg"
+import { LinkText } from "../../../components/linkText"
 import { MyTechnologies } from "./myTechnologies"
 
 export const AboutMe = () => {
   return (
-    <div className="mt-[15%] max-w-[68rem] flex flex-wrap justify-space-between">
+    <div className="mt-[15%] max-w-[66rem] flex flex-wrap justify-space-between">
       <div className="flex items-center justify-center gap-[7%]">
         <img src={AboutMeIcon} alt="about me icon" className="w-[18rem]" />
 
@@ -16,33 +17,25 @@ export const AboutMe = () => {
             for websites and applications. I started exploring web development
             in 2021 at a vocational school, and after getting hooked on
             front-end I decided to continue my studies at{" "}
-            <span className="text-accent font-semibold">
-              <a href="https://www.turkuamk.fi/en/" target="_blank">
-                Turku AMK
-              </a>
-            </span>
-            .
+            <LinkText link="https://www.turkuamk.fi/" name="TurkuAMK" />.
           </p>
 
           <p>
             Currently I’m working on projects at{" "}
-            <span className="text-accent font-semibold">
-              <a href="https://thefirma.fi/" target="_blank">
-                theFIRMA
-              </a>
-            </span>{" "}
-            where I’ve gained a lot of experience in building responsive
-            websites and mobile applications. As of today, I’ve been working
-            with technologies such as:
+            <LinkText link="https://thefirma.fi/?page_id=46" name="theFIRMA" />,
+            where I’ve gained a lot of experience building responsive websites
+            and mobile applications. As of today, I’ve been working with
+            technologies such as:
           </p>
 
           <MyTechnologies />
 
           <p>
             Don’t hesitate to reach out to me via{" "}
-            <span className="text-accent font-semibold">
-              <a href="mailto:karita.laine@edu.turkuamk.fi">e-mail</a>
-            </span>
+            <LinkText
+              link="mailto:karita.laine@edu.turkuamk.fi"
+              name="e-mail"
+            />
             ! :)
           </p>
         </div>
