@@ -3,7 +3,6 @@ import type { Technology } from "../../../types/technology"
 
 export const MyTechnologies = () => {
   const myTechnologies = technologies as Technology[]
-
   return (
     <div>
       {myTechnologies.map((tech, index) => (
