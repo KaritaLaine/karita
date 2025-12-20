@@ -1,5 +1,5 @@
 import DownArrow from "../../assets/down-arrow.png"
-import { IconButton } from "../../components/icon-button"
+import { IconButton } from "../../components/iconButton"
 import { Wrapper } from "../../components/wrapper/wrapper"
 import { AboutMe } from "./components/aboutMe"
 
