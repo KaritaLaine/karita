@@ -1,18 +1,19 @@
-import { Footer } from "./footer";
-import { Header } from "./header";
+import { Footer } from "./footer"
+import { Header } from "./header"
 
 interface Props {
-  children: React.ReactNode;
+  children: React.ReactNode
+  pageHeader: string
 }
 
-export const Wrapper = ({ children }: Props) => {
+export const Wrapper = ({ children, pageHeader }: Props) => {
   return (
     <>
-      <Header />
+      <Header pageHeader={pageHeader} />
       <div className="flex align-center justify-center py-[5rem] pb-[10rem] bg-cream">
         {children}
       </div>
       <Footer />
     </>
-  );
-};
+  )
+}

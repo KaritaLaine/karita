@@ -11,7 +11,7 @@ export const Home = () => {
   }
 
   return (
-    <Wrapper>
+    <Wrapper pageHeader="Hi, I'm Karita">
       <div className="flex flex-col justify-center items-center">
         <IconButton
           icon={DownArrow}

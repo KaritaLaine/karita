@@ -3,9 +3,15 @@ import Wave from "react-wavify"
 import Settings from "../../assets/settings.png"
 import { IconButton } from "../iconButton"
 
-export const Header = () => {
+interface Props {
+  pageHeader: string
+}
+
+export const Header = ({ pageHeader }: Props) => {
   const location = useLocation()
   const currentPath = location.pathname
+  const isHomePage = currentPath === "/"
+
   const navLinks = [
     { path: "/", name: "Home" },
     { path: "/projects", name: "Projects" },
@@ -37,21 +43,17 @@ export const Header = () => {
         />
       </div>
 
-      {/* Heading texts on wavy background */}
-      {currentPath === "/" ? (
-        <div className="flex justify-center items-center h-[50rem] flex-col gap-[1.5rem]">
-          <h1 className="text-[4rem] font-bold text-center">Hi, I'm Karita</h1>
+      {/* Heading texts and a wavy background */}
+      <div
+        className={`flex justify-center ${isHomePage ? "h-[50rem]" : "h-[20rem]"} items-center flex-col gap-[1.5rem]`}
+      >
+        <h1 className="text-[4rem] font-bold text-center">{pageHeader}</h1>
+        {isHomePage && (
           <h1 className="text-[2.5rem] font-normal text-center">
             a front-end developer & university student
           </h1>
-        </div>
-      ) : (
-        <div className="flex h-[20rem] justify-center items-center ">
-          <h1 className="text-[4rem] font-bold text-center mt-[6rem]">
-            Projects
-          </h1>
-        </div>
-      )}
+        )}
+      </div>
 
       <Wave
         fill="#fff1e6"
