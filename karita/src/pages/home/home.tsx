@@ -4,12 +4,10 @@ import { Wrapper } from "../../components/wrapper/wrapper"
 import { AboutMe } from "./components/aboutMe"
 
 export const Home = () => {
-  // Scroll down to the about me section when down arrow is clicked
   const scrollToAboutMe = () => {
     const aboutMeElement = document.getElementById("about-me-header")
     aboutMeElement?.scrollIntoView({ behavior: "smooth" })
   }
-
   return (
     <Wrapper pageHeader="Hi, I'm Karita">
       <div className="flex flex-col justify-center items-center">
