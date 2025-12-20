@@ -3,7 +3,8 @@
 @theme {
   --color-cream: #fff1e6;
   --color-text: #576d76;
-  --color-accent: #5898b3;
+  --color-link: #5898b3;
+  --color-linkHover: #935881;
   --font-inter: "Inter", sans-serif;
 }
 
