@@ -13,7 +13,7 @@ export const IconButton = ({ icon, alt, size, onClick, animation }: Props) => {
         src={icon}
         alt={alt}
         onClick={onClick}
-        className={`${size} cursor-pointer hover:scale-105 ${animation}`}
+        className={`${size} cursor-pointer hover:scale-120 ${animation}`}
       />
     </>
   )
