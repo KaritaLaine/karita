@@ -22,7 +22,7 @@ export const Header = ({ pageHeader }: Props) => {
 
   return (
     <header
-      className={`flex flex-col w-full overflow-hidden ${isHomePage ? "h-[40vh] sm:h-[60vh]" : "h-[30vh] sm:h-[40vh]"}`}
+      className={`flex flex-col w-full overflow-hidden ${isHomePage ? "h-[45vh] sm:h-[60vh]" : "h-[35vh] sm:h-[40vh]"}`}
     >
       {/* Navigation buttons */}
       <div className="flex lg:text-3xl md:text-2xl text-xl font-semibold flex-wrap">
@@ -48,37 +48,37 @@ export const Header = ({ pageHeader }: Props) => {
           />
         </div>
 
-        <div className="sm:hidden w-full flex bg-cream py-[3%] pl-[5%]">
+        {/* Hamburger menu for mobile users */}
+        <div className="sm:hidden w-full flex bg-cream py-[3%] pl-[5%] relative">
           <button
             className="text-3xl font-bold"
             onClick={() => setOpenHamburgerMenu((prev) => !prev)}
           >
             ☰
           </button>
+
+          {openHamburgerMenu && (
+            <div className="absolute top-full left-0 bg-cream shadow-md flex flex-col w-full pb-[10%]">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className={`${currentPath === link.path ? "text-link" : ""} text-l font-semibold`}
+                >
+                  <div className="py-[3%] border-b border-[#e6e1e1] items-center w-full flex justify-center">
+                    {link.name}
+                  </div>
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
       </div>
 
-      {/* Hamburger menu for mobile users */}
-      {openHamburgerMenu && (
-        <div className="sm:hidden bg-cream pb-[5%]">
-          {navLinks.map((link) => (
-            <Link
-              key={link.path}
-              to={link.path}
-              className={`${currentPath === link.path ? "text-link" : ""} text-l font-semibold`}
-            >
-              <div className="py-[3%] border-b border-[#e6e1e1] items-center w-full flex justify-center">
-                {link.name}
-              </div>
-            </Link>
-          ))}
-        </div>
-      )}
-
       {/* Heading texts and a wavy background */}
-      <div className="flex w-full h-full flex-col items-center justify-between">
+      <div className="flex w-full h-full flex-col items-center justify-center">
         <div className="flex-1 flex flex-col justify-center items-center text-center max-w-[90%] gap-[5%]">
-          <h1 className="lg:text-[4rem] sm:text-[3rem] text-[2.5rem] font-bold mt-[5%]">
+          <h1 className="lg:text-[4rem] sm:text-[3rem] text-[2.5rem] font-bold mt-[2rem]">
             {pageHeader}
           </h1>
 
@@ -92,8 +92,8 @@ export const Header = ({ pageHeader }: Props) => {
         <Wave
           fill="#fff1e6"
           options={{
-            height: 60,
-            amplitude: 50,
+            height: 20,
+            amplitude: 30,
             speed: 0.15,
             points: 3,
           }}
