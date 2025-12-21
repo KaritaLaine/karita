@@ -75,7 +75,7 @@ export const Header = ({ pageHeader }: Props) => {
         </div>
       </div>
 
-      {/* Heading texts and a wavy background */}
+      {/* Header and the wavy background */}
       <div className="flex w-full h-full flex-col items-center justify-center">
         <div className="flex-1 flex flex-col justify-center items-center text-center max-w-[90%] gap-[5%]">
           <h1 className="lg:text-[4rem] sm:text-[3rem] text-[2.5rem] font-bold mt-[2rem]">
