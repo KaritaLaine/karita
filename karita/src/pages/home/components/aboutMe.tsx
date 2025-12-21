@@ -4,12 +4,19 @@ import { MyTechnologies } from "./myTechnologies"
 
 export const AboutMe = () => {
   return (
-    <div className="mt-[18%] max-w-[68rem] flex flex-wrap justify-space-between">
+    <div className="mt-[18%] max-w-[75rem] w-full flex flex-wrap justify-space-between">
       <div className="flex items-center justify-center gap-[7%]">
-        <img src={AboutMeIcon} alt="about me icon" className="w-[18rem]" />
+        <img
+          src={AboutMeIcon}
+          alt="about me icon"
+          className="w-[15rem] hidden md:flex lg:w-[18rem]"
+        />
 
-        <div className="w-[90%] text-2xl gap-[2.5rem] flex flex-col">
-          <p className="text-5xl font-semibold mb-[1rem]" id="about-me-header">
+        <div className="md:text-2xl text-xl gap-[2.5rem] flex flex-col px-[5%]">
+          <p
+            className="md:text-5xl text-4xl font-semibold mb-[1rem]"
+            id="about-me-header"
+          >
             About me
           </p>
           <p>
