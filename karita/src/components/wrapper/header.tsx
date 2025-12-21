@@ -9,10 +9,10 @@ interface Props {
 }
 
 export const Header = ({ pageHeader }: Props) => {
+  const [openHamburgerMenu, setOpenHamburgerMenu] = useState(false)
   const location = useLocation()
   const currentPath = location.pathname
   const isHomePage = currentPath === "/"
-  const [openHamburgerMenu, setOpenHamburgerMenu] = useState(false)
 
   const navLinks = [
     { path: "/", name: "Home" },
