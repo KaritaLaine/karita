@@ -4,7 +4,7 @@ import type { Project } from "../../../types/project"
 export const MyProjects = () => {
   const projects = myProjects as Project[]
   return (
-    <div className="flex flex-col gap-[5rem] mx-auto">
+    <div className="flex flex-col gap-[2rem] mx-auto">
       {projects.map((project, index) => (
         <div
           key={index}
