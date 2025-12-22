@@ -6,7 +6,7 @@ export const Footer = () => {
   const isHomePage = location.pathname === "/"
   return (
     <footer className="flex flex-col text-center font-light items-center h-[15rem] justify-center bg-cream">
-      <p>Designed & developed by Karita</p>
+      <p>Designed & developed by Karita Laine</p>
       <p>Built with React, TypeScript & Tailwind CSS</p>
       <p className="mt-[1rem]">
         Contact me at{" "}
