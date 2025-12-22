@@ -21,7 +21,7 @@ export const Footer = () => {
               link="https://www.flaticon.com/authors/bomsymbols"
               name="BomSymbols"
             />{" "}
-            from <LinkText link="https://www.flaticon.com/" name="Flaticon" />.
+            from <LinkText link="https://www.flaticon.com/" name="Flaticon" />
           </p>
         </div>
       )}
