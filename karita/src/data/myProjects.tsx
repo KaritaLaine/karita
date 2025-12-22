@@ -12,18 +12,18 @@ export const myProjects = [
     image: projectGate,
   },
   {
-    name: "NDA project",
-    technologies: ["React Native", "Nativewind", "Expo", "TypeScript"],
-    description:
-      "Took part in an NDA customer project developing a responsive mobile application for Android and iOS.",
-    image: nda,
-  },
-  {
     name: "Restaurant finder",
     technologies: ["Figma"],
     description:
       "Designed a restaurant finder app as part of a UI & UX design course.",
     image: restaurantFinder,
+  },
+  {
+    name: "NDA project",
+    technologies: ["React Native", "Nativewind", "Expo", "TypeScript"],
+    description:
+      "Took part in an NDA customer project developing a responsive mobile application for Android and iOS.",
+    image: nda,
   },
   {
     name: "Study pals",
