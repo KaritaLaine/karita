@@ -22,7 +22,7 @@ export const IconButton = ({
         src={icon}
         alt={alt}
         onClick={onClick}
-        className={`${size} ${animation} hidden sm:flex`}
+        className={`${size} ${animation} hidden md:flex`}
       />
     </div>
   )

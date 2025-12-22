@@ -10,7 +10,7 @@ export const Wrapper = ({ children, pageHeader }: Props) => {
   return (
     <>
       <Header pageHeader={pageHeader} />
-      <div className="flex align-center justify-center py-[5%] pb-[10%] bg-cream">
+      <div className="flex align-center justify-center py-[3%] pb-[10%] bg-cream">
         {children}
       </div>
       <Footer />
