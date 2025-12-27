@@ -8,7 +8,7 @@ export const AboutMe = () => {
         <img
           src="/assets/about-me.svg"
           alt="about me icon"
-          className="w-[15rem] hidden lg:flex lg:w-[18rem]"
+          className="w-[15rem] hidden md:flex lg:w-[18rem]"
         />
 
         <div className="md:text-2xl text-xl gap-[2.5rem] flex flex-col px-[5%]">
