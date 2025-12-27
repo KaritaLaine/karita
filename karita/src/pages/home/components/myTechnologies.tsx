@@ -11,7 +11,7 @@ export const MyTechnologies = () => {
             href={tech.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-link font-semibold hover:text-linkHover duration-300"
+            className="text-link font-medium hover:text-linkHover duration-300"
           >
             {tech.name}
           </a>
