@@ -8,9 +8,9 @@ interface Props {
 
 export const Wrapper = ({ children, pageHeader }: Props) => {
   return (
-    <div className="h-100vh flex flex-col">
+    <div>
       <Header pageHeader={pageHeader} />
-      <div className="flex align-center justify-center pb-[4rem] bg-cream flex-grow">
+      <div className="flex align-center justify-center pb-[4rem] bg-cream">
         {children}
       </div>
       <Footer />

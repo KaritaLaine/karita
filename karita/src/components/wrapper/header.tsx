@@ -1,9 +1,6 @@
 import { Link, useLocation } from "@tanstack/react-router"
 import { useState } from "react"
 import Wave from "react-wavify"
-import Settings from "../../assets/settings.svg"
-import { IconButton } from "../iconButton"
-import { SettingsMenu } from "./settingsMenu"
 
 interface Props {
   pageHeader: string
@@ -11,8 +8,6 @@ interface Props {
 
 export const Header = ({ pageHeader }: Props) => {
   const [openHamburgerMenu, setOpenHamburgerMenu] = useState(false)
-  const [openSettings, setOpenSettings] = useState(false)
-
   const location = useLocation()
   const currentPath = location.pathname
   const isHomePage = currentPath === "/"
@@ -39,17 +34,6 @@ export const Header = ({ pageHeader }: Props) => {
               {link.name}
             </Link>
           ))}
-
-          <div className="relative">
-            <IconButton
-              icon={Settings}
-              alt="open settings icon"
-              onClick={() => setOpenSettings((prev) => !prev)}
-              size="lg:w-[1.6rem] lg:h-[1.6rem] sm:w-[1.2rem] sm:h-[1.2rem] w-[1.4rem] h-[1.4rem]"
-              hidden="hidden sm:flex"
-            />
-            {openSettings && <SettingsMenu />}
-          </div>
         </div>
 
         {/* Hamburger menu for mobile users */}

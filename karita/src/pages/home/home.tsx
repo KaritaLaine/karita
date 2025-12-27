@@ -1,4 +1,3 @@
-import DownArrow from "../../assets/down-arrow.svg"
 import { IconButton } from "../../components/iconButton"
 import { Wrapper } from "../../components/wrapper/wrapper"
 import { AboutMe } from "./components/aboutMe"
@@ -12,7 +11,7 @@ export const Home = () => {
     <Wrapper pageHeader="Hi, I'm Karita">
       <div className="flex flex-col justify-center items-center py-[4%]">
         <IconButton
-          icon={DownArrow}
+          icon="/assets/down-arrow.svg"
           alt="down arrow"
           onClick={scrollToAboutMe}
           size="h-[0.9rem] w-[1.6rem]"
