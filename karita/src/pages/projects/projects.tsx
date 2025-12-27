@@ -4,7 +4,7 @@ import { MyProjects } from "./components/myProjects"
 export const Projects = () => {
   return (
     <Wrapper pageHeader="Projects">
-      <div className="flex flex-col justify-center items-center max-w-[90%]">
+      <div className="flex flex-col justify-center items-center">
         <MyProjects />
       </div>
     </Wrapper>

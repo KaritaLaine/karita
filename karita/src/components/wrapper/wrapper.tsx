@@ -8,12 +8,12 @@ interface Props {
 
 export const Wrapper = ({ children, pageHeader }: Props) => {
   return (
-    <div>
+    <>
       <Header pageHeader={pageHeader} />
-      <div className="flex align-center justify-center pb-[4rem] bg-cream">
+      <div className="flex align-center justify-center bg-cream ">
         {children}
       </div>
       <Footer />
-    </div>
+    </>
   )
 }
