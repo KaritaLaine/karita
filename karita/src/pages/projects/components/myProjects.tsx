@@ -1,11 +1,11 @@
-import { myProjects } from "../../../data/myProjects"
+import projects from "../../../data/myProjects.json"
 import type { Project } from "../../../types/project"
 
 export const MyProjects = () => {
-  const projects = myProjects as Project[]
+  const myProjects = projects as Project[]
   return (
     <div className="flex flex-col gap-[2rem] mx-auto">
-      {projects.map((project, index) => (
+      {myProjects.map((project, index) => (
         <div
           key={index}
           className="flex flex-col justify-center items-center md:items-start gap-[1.5rem] md:flex-row md:gap-[6%] p-[2rem] rounded-xl w-full"
