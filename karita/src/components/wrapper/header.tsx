@@ -77,12 +77,12 @@ export const Header = ({ pageHeader }: Props) => {
       {/* Header and the wavy background */}
       <div className="flex w-full h-full flex-col items-center justify-center">
         <div className="flex-1 flex flex-col justify-center items-center text-center max-w-[90%] gap-[5%]">
-          <h1 className="lg:text-[4rem] sm:text-[3rem] text-[2.5rem] font-bold mt-[2rem]">
+          <h1 className="lg:text-[4rem] sm:text-[3rem] text-[2.5rem] font-semibold mt-[2rem]">
             {pageHeader}
           </h1>
 
           {isHomePage && (
-            <h2 className="lg:text-[2.5rem] sm:text-[2rem] text-[1.5rem] font-normal">
+            <h2 className="lg:text-[2.5rem] sm:text-[2rem] text-[1.5rem]">
               a front-end developer & university student
             </h2>
           )}
