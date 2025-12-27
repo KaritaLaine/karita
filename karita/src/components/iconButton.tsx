@@ -5,6 +5,7 @@ interface Props {
   onClick: () => void
   animation?: string
   text?: string
+  hidden?: string
 }
 
 export const IconButton = ({
@@ -14,6 +15,7 @@ export const IconButton = ({
   onClick,
   animation,
   text,
+  hidden,
 }: Props) => {
   return (
     <div className="cursor-pointer hover:scale-110 duration-200 flex items-center gap-[1rem]">
@@ -22,7 +24,7 @@ export const IconButton = ({
         src={icon}
         alt={alt}
         onClick={onClick}
-        className={`${size} ${animation} hidden md:flex`}
+        className={`${size} ${animation} ${hidden}`}
       />
     </div>
   )

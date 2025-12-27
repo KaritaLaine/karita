@@ -16,6 +16,7 @@ export const Home = () => {
           alt="down arrow"
           onClick={scrollToAboutMe}
           size="h-[0.9rem] w-[1.6rem]"
+          hidden="hidden md:flex"
         />
 
         <AboutMe />
