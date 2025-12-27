@@ -1,7 +1,7 @@
-import DownArrow from "../../assets/down-arrow.svg"
 import { IconButton } from "../../components/iconButton"
 import { Wrapper } from "../../components/wrapper/wrapper"
 import { AboutMe } from "./components/aboutMe"
+import DownArrow from "/assets/down-arrow.svg"
 
 export const Home = () => {
   const scrollToAboutMe = () => {

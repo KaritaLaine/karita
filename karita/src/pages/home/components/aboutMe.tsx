@@ -1,6 +1,6 @@
-import AboutMeIcon from "../../../assets/about-me.svg"
 import { LinkText } from "../../../components/linkText"
 import { MyTechnologies } from "./myTechnologies"
+import AboutMeIcon from "/assets/about-me.svg"
 
 export const AboutMe = () => {
   return (
