@@ -3,7 +3,7 @@ import { MyTechnologies } from "./myTechnologies"
 
 export const AboutMe = () => {
   return (
-    <div className="md:mt-[18%] max-w-[75rem] w-full flex flex-wrap justify-space-between">
+    <div className="md:mt-[15%] max-w-[75rem] w-full flex flex-wrap justify-space-between p-[2rem]">
       <div className="flex items-center justify-center gap-[7%]">
         <img
           src="/assets/about-me.svg"
@@ -11,7 +11,7 @@ export const AboutMe = () => {
           className="w-[15rem] hidden md:flex lg:w-[18rem]"
         />
 
-        <div className="md:text-2xl text-xl gap-[2.5rem] flex flex-col px-[5%]">
+        <div className="md:text-2xl text-xl gap-[2.5rem] flex flex-col text-left">
           <p
             className="md:text-5xl text-4xl font-semibold mb-[1rem] md:text-left text-center"
             id="about-me-header"
