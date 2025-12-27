@@ -1,7 +1,7 @@
 import { Link, useLocation } from "@tanstack/react-router"
 import { useState } from "react"
 import Wave from "react-wavify"
-import Settings from "../../assets/settings.png"
+import Settings from "../../assets/settings.svg"
 import { IconButton } from "../iconButton"
 
 interface Props {
