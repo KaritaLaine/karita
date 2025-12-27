@@ -10,7 +10,7 @@ export const Home = () => {
   }
   return (
     <Wrapper pageHeader="Hi, I'm Karita">
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center py-[4%]">
         <IconButton
           icon={DownArrow}
           alt="down arrow"
