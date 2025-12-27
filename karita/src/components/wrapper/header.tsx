@@ -18,7 +18,7 @@ export const Header = ({ pageHeader }: Props) => {
 
   return (
     <header
-      className={`flex flex-col w-full overflow-hidden ${isHomePage ? "h-[45vh] md:h-[60vh] lg:h-[75vh]" : "h-[35vh] md:h-[40vh]"}`}
+      className={`flex flex-col w-full overflow-hidden ${isHomePage ? "h-[45vh] md:h-[60vh] lg:h-[75vh]" : "h-[40vh]"}`}
     >
       {/* Navigation buttons */}
       <div className="flex lg:text-3xl md:text-2xl text-xl font-semibold flex-wrap">
