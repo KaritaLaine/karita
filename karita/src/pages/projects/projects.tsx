@@ -1,13 +1,12 @@
-import { Wrapper } from "../../components/wrapper/wrapper";
+import { Wrapper } from "../../components/wrapper/wrapper"
+import { MyProjects } from "./components/myProjects"
 
 export const Projects = () => {
   return (
-    <Wrapper>
-      <div className="flex flex-col justify-center items-center">
-        <div className="mt-[8rem]">
-          <p> Projects </p>
-        </div>
+    <Wrapper pageHeader="Projects">
+      <div className="flex flex-col justify-center items-center max-w-[90%]">
+        <MyProjects />
       </div>
     </Wrapper>
-  );
-};
+  )
+}

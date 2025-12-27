@@ -1,21 +1,26 @@
-import DownArrow from "../../assets/down-arrow.png";
-import { Wrapper } from "../../components/wrapper/wrapper";
+import DownArrow from "../../assets/down-arrow.svg"
+import { IconButton } from "../../components/iconButton"
+import { Wrapper } from "../../components/wrapper/wrapper"
+import { AboutMe } from "./components/aboutMe"
 
 export const Home = () => {
+  const scrollToAboutMe = () => {
+    const aboutMeElement = document.getElementById("about-me-header")
+    aboutMeElement?.scrollIntoView({ behavior: "smooth" })
+  }
   return (
-    <Wrapper>
-      <div className="flex flex-col justify-center items-center">
-        {/* TODO: use icon button component? */}
-        <img
-          src={DownArrow}
+    <Wrapper pageHeader="Hi, I'm Karita">
+      <div className="flex flex-col justify-center items-center py-[4%]">
+        <IconButton
+          icon={DownArrow}
           alt="down arrow"
-          className="h-[0.9rem] w-[1.6rem] cursor-pointer animate-bounce"
+          onClick={scrollToAboutMe}
+          size="h-[0.9rem] w-[1.6rem]"
+          hidden="hidden md:flex"
         />
 
-        <div className="mt-[15rem] max-w-[50rem] text-align-left flex">
-          <p className="text-4xl font-semibold"> About me </p>
-        </div>
+        <AboutMe />
       </div>
     </Wrapper>
-  );
-};
+  )
+}
