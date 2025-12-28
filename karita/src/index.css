@@ -16,5 +16,5 @@ html {
 html,
 body {
   height: 100%;
-  overscroll-behavior-y: none;
+  overscroll-behavior-y: contain;
 }
