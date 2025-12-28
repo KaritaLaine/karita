@@ -1,7 +1,7 @@
 [
   {
     "name": "Project Gate",
-    "technologies": ["React", "Chakra UI", "TypeScript", "TanStack Router"],
+    "technologies": ["React", "Chakra UI", "TypeScript"],
     "description": "Frontend developer on an internal theFIRMA project, developing a website for students and teachers to manage study path information and project applications.",
     "image": "/assets/project-gate.svg"
   },
