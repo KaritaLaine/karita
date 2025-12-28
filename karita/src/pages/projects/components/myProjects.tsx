@@ -44,9 +44,7 @@ export const MyProjects = () => {
                 </p>
               </div>
 
-              <p className="text-lg text-left text-[#453939]">
-                {project.description}
-              </p>
+              <p className="text-lg text-[#453939]">{project.description}</p>
             </div>
           </div>
         ))}
