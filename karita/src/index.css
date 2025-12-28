@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cream: #fff1e6;
+  --color-cream: #fff4eb;
   --color-text: #576d76;
   --color-link: #5898b3;
   --color-linkHover: #935881;
@@ -10,5 +10,5 @@
 }
 
 html {
-  background-color: #fff1e6;
+  background-color: #fff4eb;
 }

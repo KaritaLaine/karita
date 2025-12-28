@@ -78,7 +78,7 @@ export const Header = ({ pageHeader }: Props) => {
         </div>
 
         <Wave
-          fill="#fff1e6"
+          fill="#fff4eb"
           options={{
             height: 20,
             amplitude: 30,
