@@ -9,7 +9,7 @@ export const Home = () => {
   }
   return (
     <Wrapper pageHeader="Hi, I'm Karita">
-      <div className="flex flex-col justify-center items-center py-[4%]">
+      <div className="flex flex-col justify-center items-center md:pt-[4rem]">
         <IconButton
           icon="/assets/down-arrow.svg"
           alt="down arrow"

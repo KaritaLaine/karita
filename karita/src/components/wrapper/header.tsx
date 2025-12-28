@@ -18,11 +18,11 @@ export const Header = ({ pageHeader }: Props) => {
 
   return (
     <header
-      className={`flex flex-col w-full overflow-hidden ${isHomePage ? "h-[45vh] md:h-[60vh] lg:h-[75vh]" : "h-[40vh]"}`}
+      className={`flex flex-col w-full overflow-hidden ${isHomePage ? "h-[45vh] md:h-[60vh] lg:h-[80vh]" : "h-[40vh]"}`}
     >
       {/* Navigation buttons */}
       <div className="lg:text-3xl md:text-2xl text-xl font-semibold">
-        <div className="hidden sm:flex gap-[4%] w-full items-center pl-[4rem] md:pl-[5rem] lg:pl-[7rem] pt-[2%]">
+        <div className="hidden sm:flex gap-[4%] w-full items-center pl-[4rem] md:pl-[5rem] lg:pl-[7rem] lg:md:pt-[2.5rem] pt-[2rem]">
           {navLinks.map((link) => (
             <Link
               key={link.path}
@@ -65,13 +65,13 @@ export const Header = ({ pageHeader }: Props) => {
 
       {/* Header and the wavy background */}
       <div className="flex w-full h-full flex-col items-center justify-center">
-        <div className="flex-1 flex flex-col justify-center items-center text-center max-w-[90%] gap-[5%]">
-          <h1 className="lg:text-[4rem] sm:text-[3rem] text-[2.5rem] font-semibold mt-[2rem]">
+        <div className="flex-1 flex flex-col justify-center items-center text-center max-w-[90%] gap-[1rem] md:gap-[5%]">
+          <h1 className="lg:text-6xl sm:text-5xl text-3xl font-semibold mt-[2rem]">
             {pageHeader}
           </h1>
 
           {isHomePage && (
-            <h2 className="lg:text-[2.5rem] sm:text-[2rem] text-[1.5rem]">
+            <h2 className="lg:text-4xl sm:text-3xl text-xl">
               a front-end developer & university student
             </h2>
           )}
@@ -80,7 +80,7 @@ export const Header = ({ pageHeader }: Props) => {
         <Wave
           fill="#fff4eb"
           options={{
-            height: 20,
+            height: 30,
             amplitude: 30,
             speed: 0.15,
             points: 3,
