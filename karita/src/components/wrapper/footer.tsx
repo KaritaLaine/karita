@@ -17,7 +17,7 @@ export const Footer = () => {
       </p>
 
       {isHomePage && (
-        <div className="text-xs text-gray-400 mt-[2rem]">
+        <div className="text-xs text-gray-400 mt-[2rem] md:flex hidden">
           <p>
             About me icon made by{" "}
             <span>
