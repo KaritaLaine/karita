@@ -11,7 +11,7 @@ export const AboutMe = () => {
           className="w-[15rem] hidden md:flex lg:w-[18rem]"
         />
 
-        <div className="md:text-2xl text-xl gap-[2.5rem] flex flex-col text-left">
+        <div className="md:text-2xl text-xl gap-[2.5rem] flex flex-col">
           <p
             className="md:text-5xl text-3xl font-semibold mb-[1rem] md:text-left text-center"
             id="about-me-header"
