@@ -12,3 +12,9 @@
 html {
   background-color: #fff4eb;
 }
+
+html,
+body {
+  height: 100%;
+  overscroll-behavior-y: none;
+}
