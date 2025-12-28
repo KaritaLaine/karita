@@ -17,13 +17,15 @@ export const MyProjects = () => {
 
   return (
     <>
-      <div className={`flex flex-col gap-[2rem] mx-auto`}>
+      <div className={`flex flex-col gap-[4rem] mx-auto`}>
         {myProjects.map((project, index) => (
           <div
             key={index}
-            className="flex flex-col justify-center items-center md:items-start gap-[1.5rem] md:flex-row md:gap-[6%] p-[2rem] rounded-xl w-full"
+            className="flex flex-col justify-center items-center md:items-start gap-[1.5rem] md:flex-row md:gap-[6%] px-[2rem] rounded-xl w-full"
           >
-            <h1 className="text-3xl md:hidden font-semibold">{project.name}</h1>
+            <h1 className="text-[1.6rem] md:hidden font-semibold">
+              {project.name}
+            </h1>
             <img
               src={project.image}
               alt={project.name}
