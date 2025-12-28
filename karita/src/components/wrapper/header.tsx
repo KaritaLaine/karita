@@ -21,8 +21,8 @@ export const Header = ({ pageHeader }: Props) => {
       className={`flex flex-col w-full overflow-hidden ${isHomePage ? "h-[45vh] md:h-[60vh] lg:h-[75vh]" : "h-[40vh]"}`}
     >
       {/* Navigation buttons */}
-      <div className="flex lg:text-3xl md:text-2xl text-xl font-semibold flex-wrap">
-        <div className="hidden sm:flex gap-[4%] w-full justify-end items-center pr-[4rem] md:pr-[7rem] pt-[2.5%]">
+      <div className="lg:text-3xl md:text-2xl text-xl font-semibold">
+        <div className="hidden sm:flex gap-[4%] w-full items-center pl-[4rem] md:pl-[5rem] lg:pl-[7rem] pt-[2%]">
           {navLinks.map((link) => (
             <Link
               key={link.path}
